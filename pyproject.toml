@@ -1,0 +1,25 @@
+[project]
+name = "employee-api-fastapi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "nexustech101", email = "charlesldefreeseiii@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "pydantic[email]>=2.13.5",
+    "python-dotenv>=1.2.4",
+    "sqlalchemy>=2.0",
+    "sqlmodel>=0.0.48",
+    "typing>=3.10.0.0",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+employee-api-fastapi = "employee_api_fastapi:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
